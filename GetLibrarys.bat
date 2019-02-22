@@ -1,0 +1,2 @@
+gradlew genSources eclipse
+pause

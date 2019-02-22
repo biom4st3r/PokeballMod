@@ -1,0 +1,17 @@
+{
+  "id": "pipes",
+  "name": "Example Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "version": "${version}",
+  "side": "universal",
+  "initializers": [
+    "com.biom4st3r.pipes.PipesMod"
+  ],
+  "requires": {
+    "fabric": "*"
+  },
+  "mixins": {
+    "client": "modid.client.json",
+    "common": "modid.common.json"
+  }
+}
