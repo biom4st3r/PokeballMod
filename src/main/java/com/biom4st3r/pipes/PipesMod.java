@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraft.item.block.BlockItem;
 import net.minecraft.item.Item.Settings;
@@ -17,11 +18,14 @@ public class PipesMod implements ModInitializer {
 	
 	//public static final Item tItem = new Item(new Settings().itemGroup(ItemGroup.MISC));
 	public static final Block tBlock = new Block(FabricBlockSettings.of(Material.STONE).strength(1.0f, 1.0f).build());
+	
+	public static final Enchantment SoulStealEnchantment = new SoulStealEnchantment();
 	@Override
 	public void onInitialize() 
 	{
 		//Registry.BLOCK.register(new Identifier(MODID,"pipe"),tBlock);
 		Registry.ITEM.register(new Identifier(MODID,"souljar"),new SoulJarItem());
+		Registry.register(Registry.ENCHANTMENT, new Identifier(MODID,"soulsteal"), SoulStealEnchantment);
 		//Registry.ITEM.register(new Identifier(MODID,"pipe"), new BlockItem(tBlock, new Item.Settings().stackSize(64).itemGroup(ItemGroup.MISC)));
 		//System.out.println("Hello Fabric world!");
 	}
