@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        " r ",
+        " db",
+        "iii"
+    ],
+    "key": {
+        "d": {
+            "item": "minecraft:dispenser"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "r": {
+            "item": "minecraft:redstone_block"
+        },
+        "b": {
+            "item": "minecraft:stone_button"
+        }
+    },
+    "result": {
+        "item": "biom4st3r:pokeball"
+    }
+}

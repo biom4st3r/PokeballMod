@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "biom4st3r:item/souljar"
+    "layer0": "biom4st3r:item/pokeball"
   }
 }
